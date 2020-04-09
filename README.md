@@ -6,8 +6,8 @@ Hello World
 
 ### Apart of the world is ours ! (level 3)
 
-'Italic'
+*Italic*
 
-"Bold"
+**Bold**
 
-** hdkkd
+***sllm***
