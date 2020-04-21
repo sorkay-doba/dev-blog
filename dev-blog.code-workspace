@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:\\Users\\Samsung\\POWERCODERS\\support"
+		},
+		{
+			"path": "C:\\Users\\Samsung\\WorkShop"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "support"
+	}
+}
