@@ -162,6 +162,47 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/*FORM ELEMENTS*/
+
+button {
+  background: none;
+  border: none;
+}
+input, input:focus {
+  border: none;
+  outline: none;
+}
+/*TITLES*/
+  
+  h1 {
+    font-weight: bold;
+    font-family: montserrat;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  main p {
+    margin-bottom: 1rem; /*of 16px*/
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    font-family: montserrat;
+    font-size: medium;
+    
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+
+  }
 .container {
   display: flex;
   padding-left: 20rem;    
@@ -170,6 +211,8 @@ a:hover {
  /*LAYOUT
  ---------------------------------------
  /*#region*/
+
+ 
  /*LEFT CONTENT
  ---------------------------------------*/
 
@@ -192,13 +235,12 @@ a:hover {
 
   }
 
-   /*MAIN CONTENT*/
+  /*Profile*/
 
-  .main {
-    margin-top: 280px;
-    background-color: sandybrown;
-  
-}
+.profile-picture {
+
+}   
+
 
 /*
 aside {
@@ -223,9 +265,24 @@ aside {
 
   }
   .header {
-    /*padding: 3rem 0 4rem;*/
-    background-color: #FAFAFA;
-  } 
+    padding: 3rem 0 3rem;
+    background-color: burlywood
+  }
+  
+  /*MAIN CONTENT*/
+
+  .main {
+    max-width: 820px;
+    margin-top: 0 auto;
+    background-color: whitesmoke;
+  }
+  
+  .footer {
+    
+    padding: 0.5em 0;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: burlywood;
+  }
   
   /*.main {
   /*flex:2;
@@ -245,103 +302,27 @@ aside {
   }*/
   
   .blog-item {
-    margin-bottom: 3em;
+    margin-bottom: .5em;
 
   }
   .blog-item-figure {
     width: 100%;
     max-width: 110px;
-    /*margin-right: 1rem;
+    /*margin-right: 1rem;*/
   }
 
   /*FOOTER*/
 
-  .footer {
-    padding: 0.8rem;
-    color: rgba(255, 255, 255, 0.7);
-    background-color: #223142;
-  }
+ 
 
-  /*TITLES*/
-  .main p {
-    margin-bottom: 0.875rem;
-  }
-  .index main p {
-
-  }
-/*
   
-  /*aPROFILE*/
-
-  .profile-picture {
-    overflow: auto;
-    width: 160px;
-    height: 160px;        
-  }
-  .picture-border {
-    border-radius: 10%;
-  }
-
-
-/*
-.item .aside .main {
-  display: flex;
-  margin-left: 0;
-  text-align: center;
-  width: 0.25rem 0.75rem;
-}
-.item  {
-  display: flex;
-  margin: auto;
-  align-items: left;
-  text-align: left;
-  width: 0.75rem;
-}
-
-.container div {
-    display: flex;
-    justify-content: center; /*center on X axis*/
-   /* align-items: center; /*center on y axis*/
-  
-  .icon mail, facebook, instagram {
-display: inline-block;
-width: 1em;
-height: 1em;
-stroke-width: 0;
-stroke: currentColor;
-fill: currentColor;
-}
-
-
-  h1 {
-    font-weight: bold;
-    font-family: montserrat;
-    font-size: xx-large;
-    text-align: center;
-  }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: bold;
-    font-family: montserrat;
-    font-size: medium;
-    
-  }
-  
-  img {
-   
-    width: 7rem;
-    height: 7rem;
-    margin-top: 3rem;
-
-
-  }
-
   /*HELPER CLASSES
   DRY - Don't repeat Yourself ! */
    /* a. TYPOGRAPHY*/
+
+   .center {
+     text-align: center;
+   }
 
   .montserrat {
     font-family: Montserrat-Bold, Montserrat-SemiBold, monospace;
@@ -404,16 +385,10 @@ fill: currentColor;
 
   /*PADDINGS*/
 
+  
+
   /*FLEX*/ 
   
   .flex aside main {
     display: flex;
   }
-
-  
- 
-  /* LAYOUT */
-
- 
-
-  /*RIGHT CONTENT*/
