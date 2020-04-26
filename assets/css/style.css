@@ -188,6 +188,15 @@ input, input:focus {
   main p {
     margin-bottom: 0.5rem; /*of 16px*/    
   }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
   h2,
   h3,
   h4,
@@ -199,15 +208,8 @@ input, input:focus {
     margin-left: 3rem;
     line-height: 1rem;
 
-  }
+  }  
   
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    margin-left: 2rem;
-  }
   p {
     margin-left: 3rem;
    
@@ -234,6 +236,7 @@ input, input:focus {
     position: fixed;
     top: 0;
     left: 0;
+    padding: 2rem 1rem;
 
     color: #fff;
     background-color: #5FCB71;
@@ -247,15 +250,28 @@ input, input:focus {
 
   /*Profile*/
 
+  .profile {
+    border-bottom: solid;
+    color: darkslategray;
+    padding-bottom: 2rem;
+  }
 
-.profile-picture {
+  .profile-picture {
+    overflow: auto;
+  }
+
+  .profile-picture img {
   
     width: 10em;
-    border-color: none;
-    border-width: 1em;
+    /*border-color: none;
+    border-width: 1em;*/
     border-radius: 10%;
+  }   
+  /*to target the icons*/
+  
+  .profile-social-i {
 
-}   
+  }
 
 
 /*
@@ -297,7 +313,7 @@ aside {
   }
 
   .blog-item {
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
   }
   .blog-item-figure {
     width: 100%;
@@ -357,6 +373,56 @@ aside {
     margin-left: 3rem;
     color: darkgoldenrod;
   }
+  @font-face {
+    font-family: 'soicons';
+    src: 
+    url('fonts/soicons.ttf?ihc9r5') format('truetype'),
+    url('fonts/soicons.woff?ihc9r5') format('woff'),
+    url('fonts/soicons.svg?ihc9r5#soicons') format('svg');
+    font-weigth: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  [class^="icon-"], [class*="icon-"] {
+    font-family: 'soicons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+  }
+  .icon-arrow-right:before {
+    content: "\e900";
+  }
+  .icon-user:before {
+    content: "\e901";
+  }
+  .icon-aboutme:before {
+    content: "\e902";
+  }
+  .icon-home:before {
+    content: "\e903";
+  }
+  .icon-blogpost:before {
+    content: ;
+  }
+  .icon-codepen:before {
+    content: "\e904";
+  }
+  .icon-stack-overflow:before {
+    content: "\e905";
+  }
+  .icon-github:before {
+    content: "\e906";
+  }
+  .icon-linkedin:before {
+    content: "\e907";
+  }
+
 
   /*b. FONT WEIGHTS*/
 
@@ -395,6 +461,7 @@ aside {
   }*/
   .mx {
     margin-left: auto;
+    margin-right: auto;
   }
 
   .m-b-1 {
