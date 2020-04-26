@@ -150,6 +150,9 @@ body {
   line-height: 1.5;
   
 }
+main {
+  font-size: 0.875rem;
+}
 
 /*LINKS*/
 
@@ -180,10 +183,10 @@ input, input:focus {
     font-family: montserrat;
     font-size: xx-large;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 2rem;    
   }
   main p {
-    margin-bottom: 1rem; /*of 16px*/
+    margin-bottom: 0.5rem; /*of 16px*/    
   }
   h2,
   h3,
@@ -193,18 +196,25 @@ input, input:focus {
     font-weight: bold;
     font-family: montserrat;
     font-size: medium;
-    
+    margin-left: 3rem;
+    line-height: 1rem;
+
   }
   
   img {
     display: block;
     width: 100%;
     height: auto;
-    margin-top: 3rem;
-
+    margin-top: 1rem;
+    margin-left: 2rem;
   }
+  p {
+    margin-left: 3rem;
+   
+  }
+
 .container {
-  display: flex;
+  /*display: flex;*/
   padding-left: 20rem;    
 }
 
@@ -237,7 +247,13 @@ input, input:focus {
 
   /*Profile*/
 
+
 .profile-picture {
+  
+    width: 10em;
+    border-color: none;
+    border-width: 1em;
+    border-radius: 10%;
 
 }   
 
@@ -264,9 +280,12 @@ aside {
     padding-left: 280px;
 
   }
+
+/*HEADER*/
+
   .header {
     padding: 3rem 0 3rem;
-    background-color: burlywood
+    background-color: whitesmoke;
   }
   
   /*MAIN CONTENT*/
@@ -274,8 +293,18 @@ aside {
   .main {
     max-width: 820px;
     margin-top: 0 auto;
-    background-color: whitesmoke;
+    background-color: #ffffff;
   }
+
+  .blog-item {
+    margin-bottom: 1.5em;
+  }
+  .blog-item-figure {
+    width: 100%;
+    max-width: 110px;
+    margin-right: 3rem;
+  }
+  /*FOOTER*/
   
   .footer {
     
@@ -301,20 +330,17 @@ aside {
         
   }*/
   
-  .blog-item {
-    margin-bottom: .5em;
-
-  }
-  .blog-item-figure {
-    width: 100%;
-    max-width: 110px;
-    /*margin-right: 1rem;*/
-  }
+  
 
   /*FOOTER*/
 
  
-
+ /*FLEX*/ 
+  
+  .flex {
+    display: flex;
+  }
+  
   
   /*HELPER CLASSES
   DRY - Don't repeat Yourself ! */
@@ -326,6 +352,10 @@ aside {
 
   .montserrat {
     font-family: Montserrat-Bold, Montserrat-SemiBold, monospace;
+  }
+  .courier {
+    margin-left: 3rem;
+    color: darkgoldenrod;
   }
 
   /*b. FONT WEIGHTS*/
@@ -358,11 +388,11 @@ aside {
     color: #222222;
   }
 
-   /*MARGINS (.m is the convebtion fro margin in bootstrap)*/
+   /*MARGINS (.m is the convention for margin in bootstrap)*/
 
-  .m0 {
-    margin: 0em;
-  }
+  /*.m0 {
+    margin: 0em; concerne la 1ère section
+  }*/
   .mx {
     margin-left: auto;
   }
@@ -382,13 +412,10 @@ aside {
   .m-b-5 {
     margin-bottom: 2rem;
   }
+  
 
   /*PADDINGS*/
 
   
 
-  /*FLEX*/ 
-  
-  .flex aside main {
-    display: flex;
-  }
+ 
