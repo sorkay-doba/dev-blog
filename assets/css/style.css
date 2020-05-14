@@ -171,8 +171,8 @@ a:hover {
 button {
   background: lightgrey;
   border: thin;
-  border-radius: none;
-  padding-top: 1em;
+  border-radius: 10%;
+  /*padding-top: 1em;*/
 }
 input, input:focus {
   border: none;
@@ -182,7 +182,6 @@ input, input:focus {
   
   h1 {
     font-weight: bold;
-    font-family: Montserrat;
     padding-bottom: 1em;
     font-size: xx-large;
     text-align: center;
@@ -210,14 +209,12 @@ input, input:focus {
     font-weight: bold;
     font-family: montserrat;
     font-size: medium;
-    margin-left: 3rem;
     line-height: 1rem;
     color: #212121;
 
   }  
   
   p {
-    margin-left: 3rem;
     font-size: small;
     color: #212121;
    
@@ -226,6 +223,14 @@ input, input:focus {
 .container {
   /*display: flex;*/
   padding-left: 20rem;    
+}
+
+.blog-text {
+  margin-left: 3rem;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
  /*LAYOUT
@@ -288,9 +293,9 @@ input, input:focus {
   /*to target the icons*/
   
   nav {
-    
     margin: 1rem 1rem;   
   }
+
 
   /*span.icons { 
     margin-left: 1em; 
@@ -376,7 +381,7 @@ input, input:focus {
   .montserrat {
     font-family: Montserrat-Bold, Montserrat-SemiBold, monospace;
     color: darkgoldenrod;
-    margin-left: 3rem;
+    
   }
   
   /*MARGINS
