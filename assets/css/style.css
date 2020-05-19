@@ -216,8 +216,7 @@ input, input:focus {
   p {
     font-size: small;
     color: #212121;
-    margin-top: 1em;
-   
+    
   }
   
 .container {
@@ -317,7 +316,7 @@ input, input:focus {
 
   .right-content {
     padding-left: 280px;
-
+    
   }
 
 /*HEADER*/
@@ -346,7 +345,7 @@ input, input:focus {
     margin-top: 2em;
     margin-right: 3em;
   }
-
+  
   .next .arrow {
     display: inline-flex;
     background-color: lightgoldenrodyellow;
